@@ -3,11 +3,7 @@
 ## This are the steps to change your emails IDs so that you can have your contributions populated on your profile correctly.
 
 
-Step 1: Clone your repository in your pc. using following command.
-
-	'
-	$git clone https://github.com/user/yourrepourl.git 
-	'
+Step 1: Clone your repository in your pc. using following 	'$git clone URL' 	command.
 
 Step 2: Change Dir to your cloned repo dir by **CD** command
 
@@ -18,21 +14,21 @@ Step 4: Make sure you change your old and new email IDs in myscript.sh file.
 
 Step 5: Make sure **myscript.sh** is executable. if not so 
 
-	'
+	
 	$chmod 777 myscript.sh 
-	'
+	
 
 Step 6: execute shell script with command:: 
 
-	'
+	
 	$./myscript.sh 
-	'
+	
 
 Step 7: now time to push with command:: 
 
-	'
+	
 	$git push --force --tags origin 'refs/heads/*'
-	'
+	
 
 All done. 
 
