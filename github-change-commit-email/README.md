@@ -3,7 +3,7 @@
 ## This are the steps to change your emails IDs so that you can have your contributions populated on your profile correctly.
 
 
-Step 1: Clone your repository in your pc. using following 	'$git clone URL' 	command.
+Step 1: Clone your repository in your pc. using 	'''$git clone URL''' 	command.
 
 Step 2: Change Dir to your cloned repo dir by **CD** command
 
