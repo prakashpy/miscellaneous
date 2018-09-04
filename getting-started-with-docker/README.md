@@ -7,12 +7,12 @@ to see all running containers
         $docker ps -a
 
 
-####Docker cleanup
+#### Docker cleanup
 
-####command below will remove:
-######- all stopped containers
-######- all networks not used by at least one container
-######- all dangling images
-######- all build cache
+#### command below will remove:
+###### - all stopped containers
+###### - all networks not used by at least one container
+###### - all dangling images
+###### - all build cache
 
         $docker system prune
