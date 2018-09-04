@@ -3,4 +3,4 @@
 #### Docker Container >> running instance of an image is container; many containers running same image.
 
 to see all running containers
-	docker ps -a
+       docker ps -a
