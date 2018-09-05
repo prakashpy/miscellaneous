@@ -20,6 +20,12 @@ to see all running containers
 ######    The --no-cache flag should be used when fresh data is required
 ######    Docker Engine is used to turn  dockerfile instructions into an images. It is also used to run containers
 
+######    dockerfiles are used to tell Docker Engine how to create our image
+######    For the most part, dockerfiles are made up of sh scripts/commands
+######    Images are always based on other images, e.g the Python image we’ve been discussing is based on Alpine Linux
+######    We can only have CMD command per dockerfile
+######    The CMD command tells Docker which executable to monitor
+
 
 to run docker images
 
