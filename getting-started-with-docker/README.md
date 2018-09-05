@@ -21,6 +21,14 @@ to see all running containers
 ####    Docker Engine is used to turn  dockerfile instructions into an images. It is also used to run containers
 
 
+to run docker images
+
+        $docker run it image_name:tag_latest
+
+-rm ==  delete's container as soon as it is stopped & --name == allows us to name our container
+
+        $docker run it -rm -name temp_name image:latest
+
 
 #### Docker cleanup
 
