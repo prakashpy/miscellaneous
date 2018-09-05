@@ -1,6 +1,8 @@
 
 #### Docker image >> set of layers as you describe
 #### Docker Container >> running instance of an image is container; many containers running same image.
+#### Dockerfile >> are  used to tell Docker what it needs to do in order to create an image.
+
 
 to see all running containers
      
