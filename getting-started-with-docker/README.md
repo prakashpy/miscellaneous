@@ -27,13 +27,55 @@ to see all running containers
 ######    The CMD command tells Docker which executable to monitor
 
 
-to run docker images
+###### to run docker images
 
         $docker run it image_name:tag_latest
 
--rm ==  delete's container as soon as it is stopped & --name == allows us to name our container
+###### -rm ==  delete's container as soon as it is stopped & --name == allows us to name our container
 
         $docker run it -rm -name temp_name image:latest
+
+
+###### Docker image >> set of layers as you describe
+###### Docker Container >> running instance of an image is container; many containers running same image.
+
+        docker ps -a	To see all running containers
+
+###### Here are some of the most used docker commands.
+###### 1. Run an container
+        docker run image-name
+
+###### 2. Run a container in detached mode
+        docker run -d image-name
+
+###### 3. Stop all running containers
+        docker kill $(docker ps -q)
+
+###### 4. Delete all stopped containers
+        docker rm $(docker ps -a -q)
+
+###### 5. Delete all images
+        docker rmi $(docker images -q)
+
+###### 6. Force delete all images
+        docker rmi -f $(docker images -q)
+
+###### 7. Port mapping
+        docker run -p host_port:docker_port image-name
+
+###### 8. Volume mapping
+        docker run -v host_volume:docker_volume image-name
+
+###### 9. Run commands inside container
+        docker exec container-id command
+
+###### 10. Go inside container
+        docker exec -it container-id bash
+
+###### pect a container (eg. to find internal IP of container, image it is using etc)
+        docker inspect container-id
+
+
 
 
 #### Docker cleanup
