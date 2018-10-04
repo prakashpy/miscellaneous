@@ -13,20 +13,24 @@ For Amazon Linux
     $ sudo yum update
    
 Step 1:
-    $ wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
 
-## From https://www.anaconda.com/download/#linux, right click on 64-Bit (x86) Installer (637 MB) and Copy Link Address
+        $ wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
+
+###### From https://www.anaconda.com/download/#linux, right click on 64-Bit (x86) Installer (637 MB) and Copy Link Address
 
 Step 2:
-    $ bash Anaconda3-5.3.0-Linux-x86_64.sh
 
-## you may want to ENTER/YES several time
+        $ bash Anaconda3-5.3.0-Linux-x86_64.sh
+
+###### you need to hit ENTER/YES several time
 
 Step 3:
-    $ source .bashrc
+
+        $ source .bashrc
     
 Step 4:
-    $ ipython
+
+        $ ipython
     
         ubuntu@ip-172-31-92-187:~$ ipython
         Python 3.7.0 (default, Jun 28 2018, 13:15:42) 
@@ -43,21 +47,29 @@ Step 4:
         In [3]: exit
         
 Step 5: 
+
     Note:: Save this Out[2] sha key somewhere 
 
 Step 6: 
-    $ jupyter notebook --generate-config
+
+        $ jupyter notebook --generate-config
 
 Step 7:
-    $ mkdir certs
-    $ cd certs
+
+        $ mkdir certs
+        $ cd certs
+
 Step 8:
-    $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mycert.pem -out mycert.pem
+
+        $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mycert.pem -out mycert.pem
+
 Step 9:
-    $ cd ~/.jupyter/
-    $ vi jupyter_notebook_config.py 
+
+        $ cd ~/.jupyter/
+        $ vi jupyter_notebook_config.py 
     
-Note:: Add following lines in the file..  
+
+###### Note:: Add following lines in the file..  
 
         c = get_config()
         
@@ -75,9 +87,11 @@ Note:: Add following lines in the file..
 ## make sure to change location of cert file :: either /home/ubuntu/certs/mycert.pem or /home/ec2-user/certs/mycert.pem
 
 Step 10: 
-    $ jupyter notebook
+    
+        $ jupyter notebook
 
-## it should work now. 
+### it should work now. 
+
 All done. 
 
 
