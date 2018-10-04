@@ -1,16 +1,21 @@
 # Run Project Jupyter Notebook on AWS EC2 (either amazon linux or ubuntu)
 
-## after spending almost whole day fixing "context.load_cert_chain(ssl_options['certfile'], ssl_options.get('keyfile', None)) ssl.SSLError: [SSL] PEM lib (_ssl.c:2536)" error
-## This are the steps to you should follow ( feel free to send me an email if doesn't work)
+#### after spending almost whole day fixing "context.load_cert_chain(ssl_options['certfile'], ssl_options.get('keyfile', None)) ssl.SSLError: [SSL] PEM lib (_ssl.c:2536)" error
+#### This are the steps to you should follow ( feel free to send me an email if doesn't work)
 
 
-# Don't forget to update inbound rules for AWS EC2 Security Group; Enable inbound ports 22 (SSH), 443 (HTTPS) & 8888 (Jupyter Notebook) for all the traffic
+## Don't forget to update inbound rules for AWS EC2 Security Group; Enable inbound ports 22 (SSH), 443 (HTTPS) & 8888 (Jupyter Notebook) for all the traffic
 
-SSH into Instance with .pem file 
+#### SSH into Instance with .pem file 
+
+Step 0:
+
 For Ubuntu
-    $ sudo apt-get update
+
+        $ sudo apt-get update
 For Amazon Linux
-    $ sudo yum update
+
+        $ sudo yum update
    
 Step 1:
 
