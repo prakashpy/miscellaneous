@@ -67,6 +67,8 @@ Step 7:
 Step 8:
 
         $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mycert.pem -out mycert.pem
+        
+###### you can leave blank when asked to enter Country Name, Locality NAme, State, etc..
 
 Step 9:
 
